@@ -1,3 +1,16 @@
 <resources>
+
+    <!-- Rec Pass -->
     <string name="app_name">BudgetCompanionV2</string>
+    <string name="recpass_titulo">Restablece tu contraseña</string>
+    <string name="recpass_instruccion">Ingresa tu correo y te enviaremos instrucciones para reiniciar tu contraseña.</string>
+    <string name="btn_rest_contr">Restablecer contraseña</string>
+    <string name="btn_volver">Volver</string>
+    <string name="hint_email">" ejemplo@ejemplo.com"</string>
+
+    <!-- Rec Pass 2 -->
+
+
+    <!-- Rec Pass 3 -->
+
 </resources>
