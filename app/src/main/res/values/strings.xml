@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">BudgetCompanionV2</string>
+    <string name="perfil">Mi perfil</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="email">Email</string>
+    <string name="telefono">Teléfono</string>
+    <string name="domicilio">Domicilio</string>
+    <string name="nombreComercial">Nombre Comercial</string>
+    <string name="domicilioComercial">Domicilio Comercial</string>
+    <string name="provincia">Provincia</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="borrarPerfil">Eliminar Perfil</string>
+    <string name="buttonEditPerfil">Editar Perfil</string>
+    <string name="productos">Productos</string>
+    <string name="mail">Email</string>
 </resources>
