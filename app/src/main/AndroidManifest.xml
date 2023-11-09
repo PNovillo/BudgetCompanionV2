@@ -13,6 +13,60 @@
         android:theme="@style/Theme.BudgetCompanionV2"
         tools:targetApi="31">
         <activity
+            android:name=".Product"
+            android:exported="false" />
+        <activity
+            android:name=".Service"
+            android:exported="false" />
+        <activity
+            android:name=".User"
+            android:exported="false" />
+        <activity
+            android:name=".DatabaseHelper"
+            android:exported="false" />
+        <activity
+            android:name=".VerPresupuestoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NuevoPresupuestoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NuevoClienteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MisPresupuestos"
+            android:exported="false" />
+        <activity
+            android:name=".ListaClientesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClienteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ArticuloServiciosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarServicioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarProductoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarClienteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Presupuesto"
+            android:exported="false" />
+        <activity
+            android:name=".PresupuestoAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".Cliente"
+            android:exported="false" />
+        <activity
             android:name=".RecPass3"
             android:exported="false" />
         <activity

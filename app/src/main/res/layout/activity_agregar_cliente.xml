@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarClienteActivity">
+
+
+    <ImageView
+        android:id="@+id/iconoSuperiorIzquierdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/atras"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/volver" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agregar_cliente"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toEndOf="@id/iconoSuperiorIzquierdo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        tools:ignore="TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextApellido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/apellido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombre"
+        tools:ignore="TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextApellido"
+        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextTelefono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/telefono"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextPais"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/pais"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTelefono"
+        tools:ignore="TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextProvincia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/provincia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPais"
+        tools:ignore="TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextCiudad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/ciudad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProvincia"
+        tools:ignore="TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextCalle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/calle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCiudad"
+        tools:ignore="TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextNumero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/numero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCalle"
+        tools:ignore="TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextCP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/codigo_postal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumero"
+        tools:ignore="TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextWeb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/sitio_web"
+        android:inputType="textUri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCP"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btnGuardarCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#034186"
+        android:text="@string/guardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextWeb" />
+
+
+
+    <LinearLayout
+        android:id="@+id/iconBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/navegarAHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/home"
+            android:clickable="true"
+            android:contentDescription="@string/home"
+            android:onClick="navegarAHome"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/clientes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/clientes"
+            android:clickable="true"
+            android:contentDescription="@string/listaclientes"
+            android:onClick="navegarAListaClientes"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/productos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/productos"
+            android:clickable="true"
+            android:contentDescription="@string/productos"
+            android:onClick="navegarAProductos"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/verMas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/perfil"
+            android:clickable="true"
+            android:contentDescription="@string/mas"
+            android:onClick="navegarAContacto"
+            android:focusable="true" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

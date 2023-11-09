@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ContactActivity">
+
+
+
+    <ImageView
+        android:id="@+id/iconoSuperiorIzquierdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/atras"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/volver" />
+
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iconoSuperiorIzquierdo"
+        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize,TextContrastCheck"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNombre"
+        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/etAsunto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/asunto"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCorreo"
+        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize,TextContrastCheck"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/etMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mensaje"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etAsunto"
+        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize,TextContrastCheck"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#034186"
+        android:text="@string/enviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etMensaje" />
+
+
+
+    <LinearLayout
+        android:id="@+id/iconBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/navegarAHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="@string/home"
+            android:onClick="navegarAHome"
+            android:src="@drawable/home"
+            tools:ignore="TouchTargetSizeCheck"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/clientes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="@string/listaclientes"
+            android:onClick="navegarAListaClientes"
+            android:src="@drawable/clientes"
+            tools:ignore="TouchTargetSizeCheck"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/productos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="@string/productos"
+            android:onClick="navegarAProductos"
+            android:src="@drawable/productos"
+            tools:ignore="TouchTargetSizeCheck"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/verMas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="@string/mas"
+            android:onClick="navegarAContacto"
+            android:src="@drawable/perfil"
+            tools:ignore="TouchTargetSizeCheck"
+            android:focusable="true" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
